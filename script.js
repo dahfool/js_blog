@@ -104,6 +104,9 @@ var Blog = (function() {
 
     }
 
+    /**
+     * addEventListeners
+     */
     function addEventListeners() {
         form = document.querySelector('.addArticle');
 
@@ -122,6 +125,9 @@ var Blog = (function() {
 
     }
 
+    /**
+     * generateError
+     */
     function generateError() {
         clearErrors()
         var alert = document.createElement("div");
@@ -130,6 +136,9 @@ var Blog = (function() {
         form.appendChild(alert)
     }
 
+    /**
+     * clearErrors
+     */
     function clearErrors() {
         if (document.querySelector('.alert')) {
             document.querySelector('.alert').remove();
